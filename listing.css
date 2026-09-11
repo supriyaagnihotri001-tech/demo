@@ -1,0 +1,196 @@
+.listing-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+}
+
+.property-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.property-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+/* Image */
+
+.property-image {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* For Rent */
+
+.property-status {
+    position: absolute;
+    top: 18px;
+    right: 15px;
+
+    background: rgba(0,0,0,0.6);
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 4px;
+
+    font-weight: bold;
+}
+
+
+/* Price */
+
+.property-price {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+
+    text-shadow: 1px 1px 3px black;
+}
+
+
+/* Image buttons */
+
+.property-actions {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+
+    display: flex;
+    gap: 10px;
+}
+
+.property-actions button {
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: rgba(0,0,0,0.55);
+    color: white;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.property-actions button:hover {
+    background: black;
+}
+
+
+/* Information */
+
+.property-info {
+    padding: 20px;
+}
+
+.property-info h2 {
+    margin: 0 0 12px;
+
+    font-size: 22px;
+    color: #333;
+}
+
+.location {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+/* Details */
+
+.property-details {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+    
+    gap: 20px 10px;
+
+    color: #555;
+}
+
+.property-details span {
+    font-size: 16px;
+}
+
+
+/* View Details */
+
+.view-btn {
+    width: 100%;
+
+    margin-top: 25px;
+    padding: 12px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: rgb(226, 137, 22);
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.view-btn:hover {
+    background:rgb(226, 137, 22);
+}
+.filter-form {
+    width: 280px;
+    padding: 25px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.filter-form h2 {
+    margin-bottom: 20px;
+}
+
+.filter-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.filter-form input,
+.filter-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-form button {
+    background-color: rgb(226, 137, 22);
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
